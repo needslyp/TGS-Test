@@ -11,7 +11,7 @@ namespace Entities
         {
             base.Awake();
             
-            if (movementController == null)
+            if (!movementController)
                 movementController = GetComponent<Components.Movement.MovementBase>();
         }
 
